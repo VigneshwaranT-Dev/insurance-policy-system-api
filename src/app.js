@@ -1,0 +1,14 @@
+const express = require("express");
+
+const app = express();
+
+app.use(express.json()); // register Express middleware tells how to read incoming request JSON data.
+
+app.get("/health", (req, res) => {
+  res.status(200).json({
+    status: "OK",
+    message: "Insurance Policy Management API is running",
+  });
+});
+
+module.exports = app;
