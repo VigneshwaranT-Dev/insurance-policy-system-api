@@ -12,12 +12,10 @@ app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
 
-(async () => {
-  const user = await User.create({
-    name: "Vigneshwaran Thiruselvam",
-    email: "vthiruselvam@gmail.com",
-    password: "Vignesh@2026",
-  });
-
-  console.log(user);
-})();
+// (async () => {
+//   await User.create({
+//     name: "Harry Potter",
+//     email: "harrypotter@gmail.com",
+//     password: "Vignesh@2026",
+//   });
+// })();
